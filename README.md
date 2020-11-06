@@ -9,4 +9,4 @@ Work in progress - will be released in balenaBlocks repo soon...
 
 Librosa version: 0.7.2
 
-Includes dependencies: Cython, cmake 3.17.0, tbb, llvm 8, numba 0.32.1, scikit-learn.
+Includes dependencies: cython, cmake, tbb, llvmlite, numba, numpy, scipy, scikit-learn.
