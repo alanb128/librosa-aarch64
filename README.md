@@ -32,8 +32,8 @@ Includes dependencies: cython, cmake, tbb, llvmlite, numba, numpy, scipy, scikit
 
 ### Build with buildx
 
-docker buildx build -t balenablocks/librosa-aarch64:latest --platform raspberrypi4-64 --file Dockerfile .
+`docker buildx build -t balenablocks/librosa-aarch64:latest --platform raspberrypi4-64 --file Dockerfile .`
 
 ### Push to the repo
-docker push balenablocks/librosa-aarch64:latest
+`docker push balenablocks/librosa-aarch64:latest`
 
