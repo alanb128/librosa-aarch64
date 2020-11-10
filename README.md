@@ -11,13 +11,13 @@ version: '2.1'
 services:
   librosa:
     restart: always
-    image: balenablocks/librosa:latest
+    image: balenablocks/librosa-aarch64:latest
     privileged: true
 ```
 
 Alternatively, you may want to extend the base image within your own Dockerfile:
 ```dockerfile
-FROM balenablocks/librosa:latest
+FROM balenablocks/librosa-aarch64:latest
 
 # Add your installs and/or copy your files below...
 ```
