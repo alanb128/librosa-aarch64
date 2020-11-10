@@ -15,7 +15,7 @@ services:
     privileged: true
 ```
 
-Alternatively, you may want to extend the base image within your own Doackerfile:
+Alternatively, you may want to extend the base image within your own Dockerfile:
 ```dockerfile
 FROM balenablocks/librosa:latest
 
