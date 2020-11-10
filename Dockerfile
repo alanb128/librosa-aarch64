@@ -67,7 +67,14 @@ RUN \
 
 # ___ END FOR LIBROSA ___
 
-
+# clean up
+RUN \
+    rm 0.7.2.tar.gz && \
+    rm cmake-3.17.0 && \
+    rm -r tbb && \
+    rm -r llvmlite && \
+    rm -r librosa-0.7.2
+    
 # Get some audio recording tools
 RUN \
     apt-get install -y python3-pyaudio
