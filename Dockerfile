@@ -3,7 +3,6 @@ FROM balenalib/aarch64-ubuntu-python:3.7.7-bionic-build
 # Ensure package install won't block for user input during build
 ENV DEBIAN_FRONTEND=noninteractive
 
-
 WORKDIR /usr/src/app
 
 # ___ FOR LIBROSA ___
@@ -75,9 +74,5 @@ RUN \
     rm -r llvmlite && \
     rm -r librosa-0.7.2
     
-# Get some audio recording tools
-RUN \
-    apt-get install -y python3-pyaudio
-
 
 CMD ["sleep","infinity"]
