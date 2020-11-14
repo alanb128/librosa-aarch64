@@ -65,14 +65,6 @@ RUN \
     python3 setup.py install
 
 # ___ END FOR LIBROSA ___
-
-# clean up
-RUN \
-    rm 0.7.2.tar.gz && \
-    rm cmake-3.17.0 && \
-    rm -r tbb && \
-    rm -r llvmlite && \
-    rm -r librosa-0.7.2
     
 
 CMD ["sleep","infinity"]
