@@ -8,14 +8,14 @@ function build_and_push_image () {
 
   echo "Building for machine name $BALENA_MACHINE_NAME, platform $DOCKER_ARCH using dockerfile from $DOCKERFILE_DIR, pushing to $DOCKER_REPO/librosa-aarch64"
 
-  sed "s/%%BALENA_MACHINE_NAME%%/$BALENA_MACHINE_NAME/g" ./Dockerfile.template > ./Dockerfile.$BALENA_MACHINE_NAME
-  docker buildx build -t $DOCKER_REPO/librosa-aarch64:$BALENA_MACHINE_NAME --platform $DOCKER_ARCH --file Dockerfile.$BALENA_MACHINE_NAME .
+  #sed "s/%%BALENA_MACHINE_NAME%%/$BALENA_MACHINE_NAME/g" ./Dockerfile.template > ./Dockerfile.$BALENA_MACHINE_NAME
+  docker buildx build -t $DOCKER_REPO/librosa-aarch64:$BALENA_MACHINE_NAME --platform $DOCKER_ARCH --file Dockerfile .
 
   echo "Publishing..."
   docker push $DOCKER_REPO/librosa-aarch64:$BALENA_MACHINE_NAME
 
   echo "Cleaning up..."
-  rm Dockerfile.$BALENA_MACHINE_NAME
+  rm Dockerfile
 }
 
 # YOu can pass in a repo (such as a test docker repo) or accept the default
