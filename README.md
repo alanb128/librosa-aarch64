@@ -11,7 +11,7 @@ version: '2.1'
 services:
   librosa:
     restart: always
-    image: balenablocks/librosa-aarch64:latest
+    image: balenablocks/librosa-aarch64:raspberrypi4-64
     privileged: true
 ```
 
