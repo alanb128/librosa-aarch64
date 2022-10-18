@@ -55,7 +55,7 @@ ENV LAPACK=/usr/lib/aarch64-linux-gnu/lapack/liblapack.so
 ENV BLAS=/usr/lib/aarch64-linux-gnu/blas/libblas.so
 
 RUN \
-    python3 -m pip install scikit-learn numba==0.48.0
+    python3 -m pip install scikit-learn numba==0.48.0 resampy==0.2.2
 
 # Finally build and install librosa:
 RUN \
