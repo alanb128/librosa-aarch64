@@ -1,5 +1,5 @@
 # librosa-aarch64
-A base image for using Librosa on aarch64 architecture devices.
+A base image for using Librosa on aarch64 architecture devices via a Docker container.
 
 [Librosa](https://librosa.org/) is a popular audio and music processing tool for Python. It is notoriously difficult and time-consuming to build for aarch64 devices such as the Raspberry Pi 4, Coral Dev and Jetson boards. Simply add this image to an existing project and/or extend it for your own needs.
 
