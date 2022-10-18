@@ -1,7 +1,7 @@
 name: librosa-aarch64
 type: sw.application
 description: >-
-  Easily use Librosa on aarch64 devices.
+  Easily use the Librosa audio tool on aarch64 devices.
 assets:
   repository:
     type: blob.asset
