@@ -11,13 +11,13 @@ version: '2.1'
 services:
   librosa:
     restart: always
-    image: balenablocks/librosa-aarch64:raspberrypi4-64
+    image: bh.cr/al_s_apps/librosa-aarch64
     privileged: true
 ```
 
 Alternatively, you may want to extend the base image within your own Dockerfile:
 ```dockerfile
-FROM balenablocks/librosa-aarch64:raspberrypi4-64
+FROM bh.cr/al_s_apps/librosa-aarch64
 
 # Add your installs and/or copy your files below...
 ```
@@ -26,5 +26,5 @@ FROM balenablocks/librosa-aarch64:raspberrypi4-64
 
 Librosa version: 0.7.2
 
-Includes dependencies: cython, cmake, tbb, llvmlite, numba, numpy, scipy, scikit-learn.
+Includes dependencies: cython, cmake, tbb, llvmlite, numba, numpy, resampy, scipy, scikit-learn.
 
