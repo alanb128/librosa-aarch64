@@ -1,0 +1,26 @@
+name: librosa-aarch64
+type: sw.application
+description: >-
+  Easily use Librosa on aarch64 devices.
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/alanb128/librosa-aarch64'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/alanb128/librosa-aarch64/master/logo.png
+data:
+  defaultDeviceType: raspberry-pi4-64
+  supportedDeviceTypes:
+    - raspberrypi3-64
+    - raspberrypi4-64
+    - fincm3
+    - raspberrypicm4-ioboard
+    - coral-dev
+    - jetson-nano
+    - jetson-tx2
+    - jetson-nano-2gb-devkit
+version: 0.0.4
